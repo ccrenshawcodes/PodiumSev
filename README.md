@@ -1,6 +1,9 @@
 # PodiumSev
 Podium Severity Model 
 
+![image](https://github.com/user-attachments/assets/31bd7e5b-5518-428a-b961-144891c7ba70)
+
+
 Calculates severity by adding/removing a "selected" class when a box is clicked,
 then summing the values of the 'data-weight' attribute from each selected box.
 
