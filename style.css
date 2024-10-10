@@ -27,6 +27,19 @@
     align-items: center;
 }
 
+.clear-all {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    margin: 0.5em;
+    border: 1px solid white;
+    border-radius: 7px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .title {
     margin: 0.7em;
 }

@@ -56,7 +56,7 @@ function calculateTotals () {
         arr.push(Number(weight));
         return arr;
     }
-    
+
     selectedBoxes.forEach(box => {
         recordBoxWeight(box, weightsArray);
     })
@@ -94,7 +94,7 @@ function updateResult (totals) {
 //  Adds event listeners to the buttons that
 //  Execute all the above functions
 function makeBoxesClickable () {
-    const boxes = document.querySelectorAll('button');
+    const boxes = document.querySelectorAll('.matrix-btn');
     boxes.forEach(box => {
         box.addEventListener('click', () => {
             toggleSelectedStatus(box);
@@ -102,6 +102,26 @@ function makeBoxesClickable () {
         });
     })
 }
+
+//  Function to clear everything when you click the "clear" button
+function clearAll () {
+    const clearButton = document.querySelector('.clear-all');
+    clearButton.addEventListener('click', () => {
+
+        const result = document.querySelector('.result');
+        const resultText = document.querySelector('.result-text');
+        result.style.cssText = 'background-image: none;';
+        resultText.textContent = '';
+
+        const boxes = document.querySelectorAll('.matrix-btn');
+        boxes.forEach((box) => {
+            box.classList.remove('selected');
+            box.style.cssText = 'background-color: inherit;';
+        })
+    })
+}
+
+clearAll();
 
 //  Call the function to execute the whole thing
 makeBoxesClickable();
