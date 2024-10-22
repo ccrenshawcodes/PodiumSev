@@ -15,3 +15,5 @@ Guide to updating:
 Betterment opportunities:
 - bigger, bolder title (without making the page too big for a small Mac screen)
 - make ARR lines smaller (text size)
+- darkmode/lightmode toggle
+- "clear" button positioning
