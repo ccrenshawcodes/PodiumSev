@@ -49,6 +49,11 @@
     flex-direction: column;
 }
 
+.big-bold-header {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .buttons {
     display: grid;
     grid-auto-flow: column;
